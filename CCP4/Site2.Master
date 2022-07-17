@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site2.master.cs" Inherits="CCP4.Site2" %>
+
+<!DOCTYPE html>
+
+
+<html>
+<head runat="server">
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  
+    <header id="header"> 
+     
+<h1>Consumer Complaint Portal</h1>
+</header> 
+    <marquee><h2 style="color: indianred;">See Something Wrong do Something Right!</h2></marquee>
+    <nav id="nav">  
+    <ul>  
+        <li><a href="home.aspx">Home</a></li>  
+        <li><a href="Services.aspx">Services</a></li>  
+        <li><a href="About.aspx">About Us</a></li>  
+        <li><a href="Contact.aspx">Contact</a></li>  
+        </ul>  
+</nav>
+    
+    <p>
+       
+
+    
+        <div>
+        
+         
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+           
+        </div>
+
+    
+</body>
+    </html>

@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="CCP4.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="StyleSheet1.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+  
+    <form id="form1" runat="server">
+  
+    <header id="header"> 
+     
+<h1>Consumer Complaint Portal</h1>
+</header> 
+    <marquee><h2 style="color: indianred;">See Something Wrong do Something Right!</h2></marquee>
+    <nav id="nav">  
+    <ul>  
+        <li><a href="home.aspx">Home</a></li>  
+        <li><a href="Services.aspx">Services</a></li>  
+        <li><a href="About.aspx">About Us</a></li>  
+        <li><a href="Contact.aspx">Contact</a></li>  
+        <a href="Login.aspx">
+   &nbsp;</a><a href="Registraion Page.aspx">
+    </a>
+
+        <l style="position:absolute; right:17% ;">
+        <a href="Login.aspx">
+   <asp:Button ID=Btnl runat="server" Text="LOGIN" style="margin-left: 0px; height: 35px; width: 81px;" OnClick="Btnl_Click" PostBackUrl="~/Login.aspx" /></a></l>
+        <li class="auto-style1">
+            <asp:Label ID="Label1" runat="server" BorderColor="#990000" BorderStyle="Groove" Font-Bold="False" Font-Size="X-Large" Visible="False"></asp:Label>
+        </li>
+        <li style="position:absolute; right:11%; top: 186px; width: 90px;"> 
+            <a href="Registration Page.aspx">
+            
+        <asp:Button ID=Btns runat="server" Text="SignUp" style="width: 81px; margin-left: 0px; height: 35px; padding-left: 0px;" PostBackUrl="~/Registration page.aspx" /></li>
+ 
+         
+        <li style="position:absolute; right:3.5%; top: 190px; width: 90px;"> 
+            <asp:Button ID="BtnLG" runat="server" Text="LOGOUT" style="width: 81px; margin-left: 0px; height: 35px; padding-left: 0px;" OnClick="BtnLG_Click" Visible="False" /></li>
+   </a> </ul>  
+</nav>  
+    <aside id="side">   
+        <h1>[Updated]</h1>
+    <h1>Consumer Complaint Act 2019</h1> 
+        <marquee direction="up">
+            <b>Consumer Protection Bill was introduced in Lok Sabha in 2019 replacing the Consumer Protection Act, 1986. The bill has defined customer rights including the following:</b>
+
+    Protection against marketing goods and products which are harmful to life.
+    Information regarding quality, quantity, purity, standard and price of goods and services.
+    Access to different products and services at competitive costs.
+    Reimbursement against unfair and fraudulent trade practices.
+            </marquee>
+       
+        
+      
+<style>
+img:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+</style>
+
+        
+        <a href="jago-grahak-jago.php"> <img src="https://www.jagograhakjago.com/wp-content/uploads/serverupload/logos/jago_grahak_jago_logo.png" style="width:60%; height:50%; ">
+       
+            
+            
+          <div class ="blink"><span>Toll Free: 1800114000 or 14404</span></div>
+
+           
+        
+
+</aside>
+    <p>
+    <img src="https://miro.medium.com/max/750/1*3iCN4i45QZ2CTLjBzmQcyQ.jpeg" class="auto-style2"/></p>
+
+
+        <div>
+        
+         
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+           
+        </div>
+
+    <style>
+    footer {
+  text-align: center;
+  padding: 2px;
+  background-color: orange;
+  color: wheat;
+  
+}
+        .auto-style1 {
+            position: absolute;
+            right: 11%;
+            top: 185px;
+            width: 90px;
+        }
+        .auto-style2 {
+            height: 484px;
+            width: 1026px;
+        }
+    </style>
+    
+ <footer>
+  <a style="color:aqua;">Copyright@</a>
+  <p><a href="https://consumeraffairs.nic.in/">Department Of Consumer Complaint</a></p>
+</footer>
+
+    
+    </form>
+
+    
+</body>
+</html>
